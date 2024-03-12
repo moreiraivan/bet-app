@@ -96,15 +96,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="{{ asset('/sw.js') }}"></script>
     <script>
-        // if ("serviceWorker" in navigator) {
-        //     navigator.serviceWorker.register("/sw.js").then(
-        //         (registration) => {
-        //         },
-        //         (error) => {
-        //         },
-        //     );
-        // } else {
-        // }
+         if ("serviceWorker" in navigator) {
+             navigator.serviceWorker.register("/sw.js").then(
+                 (registration) => {
+                 },
+                 (error) => {
+                 },
+             );
+         } else {
+         }
     </script>
     @yield('scripts')
 
