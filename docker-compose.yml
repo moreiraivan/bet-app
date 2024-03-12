@@ -1,0 +1,71 @@
+version: '3'
+services:
+    app:
+        build: .
+        container_name: p999-app
+        entrypoint: dockerize -template ./.docker/app/.env:.env -template ./.docker/app/.env.testing:.env.testing php-fpm
+        environment:
+            - _DB_HOST=p999-db
+            - _DB_DATABASE=p999
+            - _DB_USERNAME=root
+            - _DB_PASSWORD=root
+            - _DB_DATABASE_TEST=p999_test
+        volumes:
+            - .:/var/www:delegated
+        networks:
+            - app-network
+        depends_on:
+            - db
+    nginx:
+        build: .docker/nginx
+        container_name: p999-nginx
+        restart: always
+        tty: true
+        ports:
+            - "8060:80"
+        volumes:
+            - .:/var/www:delegated
+        networks:
+            - app-network
+        depends_on:
+            - app
+    db:
+        image: mysql:8.0.34
+        container_name: p999-db
+        restart: always
+        tty: true
+        ports:
+            - "3306:3306"
+        volumes:
+            - ./.docker/dbdata:/var/lib/mysql
+            - ./.docker/mysql:/docker-entrypoint-initdb.d
+        environment:
+            - MYSQL_DATABASE=p999
+            - MYSQL_ROOT_PASSWORD=root
+        command: ["--bind-address=0.0.0.0","--default-authentication-plugin=mysql_native_password"]
+        networks:
+            - app-network
+
+    queue:
+        container_name: p999-queue
+        restart: always
+        build: .
+        command: php artisan queue:listen
+        volumes:
+            - .:/var/www:delegated
+        networks:
+            - app-network
+
+    schedule:
+        container_name: p999-schedule
+        restart: always
+        build: .
+        command: php artisan schedule:work
+        volumes:
+            - .:/var/www:delegated
+        networks:
+            - app-network
+
+networks:
+    app-network:
+        driver: bridge

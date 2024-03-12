@@ -1,0 +1,17 @@
+{
+    "name": "Lary-Bet",
+    "short_name": "LaryBet",
+    "start_url": "/index.php",
+    "background_color": "#6777ef",
+    "description": "Acesso VIP ao aplicativo",
+    "display": "fullscreen",
+    "theme_color": "#6777ef",
+    "icons": [
+        {
+            "src": "https://img.nsctotal.com.br/wp-content/uploads/2023/12/jogo-do-tigrinho-influenciadores-mira-da-policia-crime-estelionato-944x531.jpg",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
