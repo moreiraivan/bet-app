@@ -2,14 +2,16 @@
 
 @section('content')
     <style>
-        .my-container {
+       .my-container {
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 24px;
-            overflow: hidden;
+            overflow: auto;
             position: relative;
             height: auto;
+            min-height: 100vh;
+            margin-bottom: 120px !important;
         }
     </style>
     <div class="my-container">
@@ -49,7 +51,8 @@
             Faça seu cadastro na plataforma
         </button>
     </div>
-    @include('components.footer', ['class' => 'footer'])
+
+    @include('components.footer')
 @endsection
 
 @section('scripts')

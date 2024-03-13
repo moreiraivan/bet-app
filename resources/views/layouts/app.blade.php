@@ -26,14 +26,16 @@
 
 <body>
     <style>
-        .fixed-bottom {
-            position: absolute;
+          .fixed-bottom {
+            position: fixed;
             right: 0;
             bottom: 0;
             left: 0;
             z-index: 1030;
             box-shadow: 0 -4px 8px 0 #A74676, 0 -6px 20px 0 #A74676;
             background-color: #ffffff;
+            height: 100px;
+            /* Define a altura do rodapé para 100px */
         }
 
         a>i.icon-color {
