@@ -99,8 +99,10 @@
          if ("serviceWorker" in navigator) {
              navigator.serviceWorker.register("/sw.js").then(
                  (registration) => {
+                    console.log('it works');
                  },
                  (error) => {
+                    console.log('it not works')
                  },
              );
          } else {
