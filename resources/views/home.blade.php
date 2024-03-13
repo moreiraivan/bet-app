@@ -59,7 +59,7 @@
     <script>
         document.getElementById('register').addEventListener('click', function(event) {
             event.preventDefault();
-
+            console.log('it works');
             // Cria uma nova div com fundo marsala
             var div = document.createElement('div');
             div.style.width = '100%';
@@ -67,18 +67,19 @@
             div.style.position = 'fixed';
             div.style.top = '0';
             div.style.left = '0';
-            div.style.zIndex = '2000';
-            div.style.backgroundColor = '#A74676'; // Cor de fundo Marsala
+            div.style.zIndex = '200';
+            div.style.backgroundColor = '#A74676';
             div.id = 'marsala-div';
+            div.style.marginBottom = '5%';
 
             var iframe = document.createElement('iframe');
             iframe.src = 'https://go.aff.br4-partners.com/acessovip';
             iframe.style.width = '100%';
-            iframe.style.height = 'calc(100% - 60px)';
+            iframe.style.height = 'calc(100% - 100px)';
             iframe.style.position = 'fixed';
-            iframe.style.top = '60px'; // Adiciona padding-top ao iframe
+            iframe.style.top = '60px';
             iframe.style.left = '0';
-            iframe.style.zIndex = '2001';
+            iframe.style.zIndex = '300';
             iframe.id = 'external-site';
 
             // Cria um novo elemento de título com o texto informativo
@@ -96,11 +97,12 @@
             closeButton.style.position = 'fixed';
             closeButton.style.top = '20px';
             closeButton.style.right = '20px';
-            closeButton.style.zIndex = '2002'; // Aumenta o zIndex para sobrepor o iframe
+            closeButton.style.zIndex = '200'; // Aumenta o zIndex para sobrepor o iframe
             closeButton.style.backgroundColor = '#A74676'; // Cor de fundo Marsala
             closeButton.style.color = '#ffffff'; // Cor do texto branco
             closeButton.style.border = 'none'; // Remove a borda do botão
             closeButton.id = 'close-button';
+            closeButton.style.marginTop = '3%';
 
             var loading = document.createElement('div');
             loading.style.position = 'fixed';

@@ -16,7 +16,7 @@
             /* Adiciona espaço na parte inferior do conteúdo para o rodapé */
         }
 
-      
+
 
         p {
             display: block;
@@ -158,26 +158,17 @@
             iframe.style.zIndex = '2001';
             iframe.id = 'external-site';
 
-            // Cria um novo elemento de título com o texto informativo
-            var infoTitle = document.createElement('p');
-            infoTitle.textContent = 'Caso já possua uma conta, clique em entrar';
-            infoTitle.style.position = 'fixed';
-            infoTitle.style.top = '20px';
-            infoTitle.style.left = '20px';
-            infoTitle.style.zIndex = '2002'; // Aumenta o zIndex para sobrepor o iframe
-            infoTitle.style.color = '#ffffff'; // Cor do texto branco
-            infoTitle.id = 'info-title';
-
             var closeButton = document.createElement('button');
             closeButton.innerHTML = '<i class="fa-duotone fa-circle-xmark"></i>'; // Adiciona o ícone ao botão
             closeButton.style.position = 'fixed';
-            closeButton.style.top = '20px';
+            closeButton.style.top = '50px';
             closeButton.style.right = '20px';
             closeButton.style.zIndex = '2002'; // Aumenta o zIndex para sobrepor o iframe
             closeButton.style.backgroundColor = '#A74676'; // Cor de fundo Marsala
             closeButton.style.color = '#ffffff'; // Cor do texto branco
             closeButton.style.border = 'none'; // Remove a borda do botão
             closeButton.id = 'close-button';
+            closeButton.style.marginTop = '3%';
 
             var loading = document.createElement('div');
             loading.style.position = 'fixed';
@@ -227,19 +218,10 @@
             div.style.marginBottom = '80px';
             div.style.top = '0';
             div.style.left = '0';
-            div.style.zIndex = '2000';
+            div.style.zIndex = '200';
             div.style.backgroundColor = '#A74676';
             div.id = 'marsala-div';
-
-            var infoTitle = document.createElement('p');
-            infoTitle.textContent = 'Caso já possua uma conta, clique em entrar';
-            infoTitle.style.position = 'fixed';
-            infoTitle.style.top = '5px';
-            infoTitle.style.left = '20px';
-            infoTitle.style.zIndex = '2002';
-            infoTitle.style.color = '#ffffff';
-            infoTitle.id = 'info-title';
-
+            div.style.marginBottom = '5%';
 
             var closeButton = document.createElement('button');
             closeButton.innerHTML = '<i class="fa-duotone fa-circle-xmark"></i>';
@@ -251,6 +233,7 @@
             closeButton.style.color = '#ffffff';
             closeButton.style.border = 'none';
             closeButton.id = 'close-button';
+            closeButton.style.marginTop = '3%';
 
             var loading = document.createElement('div');
             loading.style.position = 'fixed';
@@ -281,26 +264,26 @@
             signalsDiv.style.marginTop = '50px';
             signalsDiv.style.marginBottom = '10px';
             signalsDiv.innerHTML = `
-            <div style="padding: 0 5px 0 5px">
+            <div style="padding: 0 10px 0 10px">
                 <div class="signals-div">
                     <div class="row">
                     <div class="col-6">
                         <label class="white-label" for="entry"> Entrada</label>
-                        <input class="form-control marsala-input form-control-sm" type="text" placeholder="" id="entry" disabled>
+                        <input class="form-control marsala-input form-control-sm" type="text" placeholder="" id="entry" disabled style="height: 15px; font-size: 12px;">
                     </div>
                     <div class="col-6">
                         <label class="white-label" for="leverage"> Alavancagem</label>
-                        <input class="form-control marsala-input form-control-sm" type="text" placeholder="" id="leverage" disabled>
+                        <input class="form-control marsala-input form-control-sm" type="text" placeholder="" id="leverage" disabled style="height: 15px; font-size: 12px;">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-6">
                         <label class="white-label" for="leverage"> Confiança </label>
-                        <input class="form-control marsala-input form-control-sm" type="text" placeholder="" id="trust" disabled>
+                        <input class="form-control marsala-input form-control-sm" type="text" placeholder="" id="trust" disabled style="height: 15px; font-size: 12px;">
                     </div>
                     <div class="col-6">
                         <label class="white-label" for="valid"> Validade </label>
-                        <input class="form-control marsala-input form-control-sm" type="text" placeholder="" id="valid" disabled>
+                        <input class="form-control marsala-input form-control-sm" type="text" placeholder="" id="valid" disabled style="height: 15px; font-size: 12px;">
                     </div>
                 </div>
                 <div class="row mt-2">
@@ -347,10 +330,10 @@
             var iframe = document.createElement('iframe');
             iframe.src = src;
             iframe.style.width = '100%';
-            iframe.style.height = '70%';
-            iframe.style.top = '60px'; // Adiciona padding-top ao iframe
+            iframe.style.height = 'calc(100% - 240px)';
+            iframe.style.top = '60px';
             iframe.style.left = '0';
-            iframe.style.zIndex = '2001';
+            iframe.style.zIndex = '300';
             iframe.id = 'external-site';
 
 
@@ -363,7 +346,6 @@
 
             div.appendChild(iframe);
             div.appendChild(loading);
-            div.appendChild(infoTitle);
             div.appendChild(closeButton);
             document.body.appendChild(div);
         }
