@@ -302,7 +302,7 @@
                     src = 'https://foxplay.bet/';
                     break;
                 case 'lucky-piggy':
-                    src = 'https://foxplay.bet/';
+                    src = 'https://go.aff.br4-partners.com/mf477kx3/';
                     break;
                 case 'fortune-ox':
                     src = 'https://foxplay.bet/';
