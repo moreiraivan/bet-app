@@ -299,13 +299,13 @@
             let src = null;
             switch (id) {
                 case 'fortune-tiger':
-                    src = 'https://go.aff.br4-partners.com/drd4i32s';
+                    src = 'https://foxplay.bet/';
                     break;
                 case 'lucky-piggy':
-                    src = 'https://go.aff.br4-partners.com/eay8kae1';
+                    src = 'https://foxplay.bet/';
                     break;
                 case 'fortune-ox':
-                    src = 'https://go.aff.br4-partners.com/mf477kx3';
+                    src = 'https://foxplay.bet/';
                     break;
                 case 'fortune-mouse':
                     return;
@@ -314,16 +314,16 @@
                     return;
                     break;
                 case 'aviator':
-                    src = 'https://go.aff.br4-partners.com/3u409d6d';
+                    src = 'https://foxplay.bet/';
                     break;
                 case 'mines-icon':
-                    src = 'https://go.aff.br4-partners.com/rp3jfrzs';
+                    src = 'https://foxplay.bet/';
                     break;
                 case 'roulette-lightning':
-                    src = 'https://go.aff.br4-partners.com/okh02rw3';
+                    src = 'https://foxplay.bet/';
                     break;
                 default:
-                    src = 'https://go.aff.br4-partners.com/drd4i32s';
+                    src = 'https://foxplay.bet/';
             }
             if (!src) return;
 
