@@ -1466,7 +1466,7 @@
     <div _ngcontent-ng-c1889742211="" class="container">
         <div _ngcontent-ng-c1889742211="" class="content--wrapper">
             <div _ngcontent-ng-c1889742211="" class="header">
-                <a href="{{ route('play') }}">
+                <a href="{{ route('home') }}">
                     <button _ngcontent-ng-c1889742211="" id="voltar" class="back--button"><svg
                             _ngcontent-ng-c1889742211="" xmlns="http://www.w3.org/2000/svg" height="1em"
                             viewBox="0 0 448 512">
