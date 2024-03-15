@@ -222,10 +222,7 @@
             -webkit-font-smoothing: antialiased;
         }
     </style>
-<<<<<<< HEAD
-=======
     <link rel="manifest" href="manifest.webmanifest">
->>>>>>> 8e30c1648add40ba105de168cb19bd94a11feda0
     <meta name="theme-color" content="#1976d2">
     <style>
         @import"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap";
@@ -725,11 +722,7 @@
         }
 
         .footer[_ngcontent-ng-c4005126487] .footer--content[_ngcontent-ng-c4005126487] button.active[_ngcontent-ng-c4005126487] {
-<<<<<<< HEAD
             background: #A74676;
-=======
-            background: #FFB514;
->>>>>>> 8e30c1648add40ba105de168cb19bd94a11feda0
             color: #fff;
             transition: all .3s ease-in-out
         }
@@ -750,11 +743,7 @@
             position: fixed;
             bottom: 120px;
             right: 20px;
-<<<<<<< HEAD
             background: #A74676;
-=======
-            background: #FFB514;
->>>>>>> 8e30c1648add40ba105de168cb19bd94a11feda0
             z-index: 9999;
             display: flex;
             flex-direction: column;
@@ -866,11 +855,7 @@
             cursor: pointer;
             padding: 15px;
             border: none;
-<<<<<<< HEAD
             background: #A74676;
-=======
-            background: #FFB514;
->>>>>>> 8e30c1648add40ba105de168cb19bd94a11feda0
             border-radius: 8px
         }
 
@@ -888,11 +873,7 @@
         }
 
         [_nghost-ng-c3080833612] .container[_ngcontent-ng-c3080833612] .content--wrapper[_ngcontent-ng-c3080833612] .horarios-pagantes--container[_ngcontent-ng-c3080833612] {
-<<<<<<< HEAD
             background: #A74676;
-=======
-            background: #FFB514;
->>>>>>> 8e30c1648add40ba105de168cb19bd94a11feda0
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -917,22 +898,14 @@
         }
 
         [_nghost-ng-c3080833612] .container[_ngcontent-ng-c3080833612] .content--wrapper[_ngcontent-ng-c3080833612] .deposit--container[_ngcontent-ng-c3080833612] {
-<<<<<<< HEAD
             background: #A74676;
-=======
-            background: #FFB514;
->>>>>>> 8e30c1648add40ba105de168cb19bd94a11feda0
             width: 100%;
             padding: 20px;
             margin: 0 0 20px
         }
 
         [_nghost-ng-c3080833612] .container[_ngcontent-ng-c3080833612] .content--wrapper[_ngcontent-ng-c3080833612] .deposit--container[_ngcontent-ng-c3080833612] button[_ngcontent-ng-c3080833612] {
-<<<<<<< HEAD
             background: #9a2b4b;
-=======
-            background: #F37710;
->>>>>>> 8e30c1648add40ba105de168cb19bd94a11feda0
             border-radius: 8px;
             color: #fff;
             display: flex;
@@ -951,11 +924,7 @@
         }
 
         [_nghost-ng-c3080833612] .container[_ngcontent-ng-c3080833612] .content--wrapper[_ngcontent-ng-c3080833612] .carousel--games[_ngcontent-ng-c3080833612] {
-<<<<<<< HEAD
             background: #A74676;
-=======
-            background: #FFB514;
->>>>>>> 8e30c1648add40ba105de168cb19bd94a11feda0
             padding: 20px;
             display: flex;
             flex-direction: column;
@@ -981,7 +950,6 @@
             box-shadow: 0 5px 10px #00000030, 0 3px 3px #0000003b
         }
 
-<<<<<<< HEAD
         .container[_ngcontent-ng-c260969270] .content--wrapper[_ngcontent-ng-c260969270] .install-app--container[_ngcontent-ng-c260969270] {
             display: flex;
             flex-direction: column;
@@ -992,8 +960,6 @@
             background: #FFB514;
         }
 
-=======
->>>>>>> 8e30c1648add40ba105de168cb19bd94a11feda0
         [_nghost-ng-c3080833612] .container[_ngcontent-ng-c3080833612] .content--wrapper[_ngcontent-ng-c3080833612] .carousel--games[_ngcontent-ng-c3080833612] .carousel-games--container[_ngcontent-ng-c3080833612] img.bonus--game[_ngcontent-ng-c3080833612] {
             border-radius: 19px
         }
@@ -1013,19 +979,11 @@
             border-radius: 8px;
             padding: 20px;
             margin-top: 20px;
-<<<<<<< HEAD
             background: #A74676
         }
 
         [_nghost-ng-c3080833612] .container[_ngcontent-ng-c3080833612] .content--wrapper[_ngcontent-ng-c3080833612] .install-app--container[_ngcontent-ng-c3080833612] .download--icon[_ngcontent-ng-c3080833612] {
             fill: #9a2b4b;
-=======
-            background: #FFB514
-        }
-
-        [_nghost-ng-c3080833612] .container[_ngcontent-ng-c3080833612] .content--wrapper[_ngcontent-ng-c3080833612] .install-app--container[_ngcontent-ng-c3080833612] .download--icon[_ngcontent-ng-c3080833612] {
-            fill: #f37710;
->>>>>>> 8e30c1648add40ba105de168cb19bd94a11feda0
             font-size: 26px
         }
 
@@ -1050,20 +1008,12 @@
             height: 47px;
             justify-content: center;
             background: black;
-<<<<<<< HEAD
             border: 1px solid #9a2b4b;
-=======
-            border: 1px solid #F37710;
->>>>>>> 8e30c1648add40ba105de168cb19bd94a11feda0
             border-radius: 8px
         }
 
         [_nghost-ng-c3080833612] .container[_ngcontent-ng-c3080833612] .content--wrapper[_ngcontent-ng-c3080833612] .install-app--container[_ngcontent-ng-c3080833612] .brand--buttons-container[_ngcontent-ng-c3080833612] .brand--button[_ngcontent-ng-c3080833612] svg[_ngcontent-ng-c3080833612] {
-<<<<<<< HEAD
             fill: #9a2b4b;
-=======
-            fill: #f37710;
->>>>>>> 8e30c1648add40ba105de168cb19bd94a11feda0
             font-size: 22px
         }
 
@@ -1115,11 +1065,7 @@
         }
 
         .dialog--foxpay .mdc-dialog__surface {
-<<<<<<< HEAD
             background: #A74676 !important;
-=======
-            background: #FFB514 !important;
->>>>>>> 8e30c1648add40ba105de168cb19bd94a11feda0
             border-radius: 12px !important
         }
 
@@ -1148,7 +1094,6 @@
         .container.container--pro[_ngcontent-ng-c1889742211] {
             background: black
         }
-<<<<<<< HEAD
 
         .container.container--pro[_ngcontent-ng-c1889742211] .content--wrapper[_ngcontent-ng-c1889742211] .header[_ngcontent-ng-c1889742211] p[_ngcontent-ng-c1889742211] {
             color: #fff
@@ -1698,7 +1643,7 @@
         </div>
     </div>
     </app-page><!----></app-root>
-    <div id="install-ios">
+    {{-- <div id="install-ios">
         <span class="close-button">&times;</span>
         <div _ngcontent-ng-c1863394268="" class="container"><mat-icon _ngcontent-ng-c1863394268="" id="close"
                 role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color"
@@ -1755,493 +1700,7 @@
                 <p _ngcontent-ng-c1863394268="" class="title">Adicione o app a tela de início.</p>
             </div>
         </div>
-    </div>
+    </div> --}}
 </body>
 
-=======
-
-        .container.container--pro[_ngcontent-ng-c1889742211] .content--wrapper[_ngcontent-ng-c1889742211] .header[_ngcontent-ng-c1889742211] p[_ngcontent-ng-c1889742211] {
-            color: #fff
-        }
-
-        .container[_ngcontent-ng-c1889742211] .content--wrapper[_ngcontent-ng-c1889742211] {
-            display: flex;
-            flex-direction: column
-        }
-
-        @media screen and (min-width: 769px) {
-            .container[_ngcontent-ng-c1889742211] .content--wrapper[_ngcontent-ng-c1889742211] {
-                max-width: 600px;
-                margin: 0 auto
-            }
-        }
-
-        @media screen and (min-width: 1024px) {
-            .container[_ngcontent-ng-c1889742211] .content--wrapper[_ngcontent-ng-c1889742211] {
-                width: 1000px;
-                max-width: none
-            }
-        }
-
-        @media screen and (min-width: 1280px) {
-            .container[_ngcontent-ng-c1889742211] .content--wrapper[_ngcontent-ng-c1889742211] {
-                width: 1200px;
-                max-width: none
-            }
-        }
-
-        .container[_ngcontent-ng-c1889742211] .content--wrapper[_ngcontent-ng-c1889742211] .header[_ngcontent-ng-c1889742211] {
-            display: flex;
-            flex-direction: row;
-            align-items: center
-        }
-
-        .container[_ngcontent-ng-c1889742211] .content--wrapper[_ngcontent-ng-c1889742211] .header[_ngcontent-ng-c1889742211] .back--button[_ngcontent-ng-c1889742211] {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 15px;
-            border: none;
-            background: #FFB514;
-            cursor: pointer;
-            border-radius: 8px
-        }
-
-        .container[_ngcontent-ng-c1889742211] .content--wrapper[_ngcontent-ng-c1889742211] .header[_ngcontent-ng-c1889742211] .back--button[_ngcontent-ng-c1889742211] svg[_ngcontent-ng-c1889742211] {
-            fill: #000;
-            width: 24px;
-            height: 24px
-        }
-
-        .container[_ngcontent-ng-c1889742211] .content--wrapper[_ngcontent-ng-c1889742211] .header[_ngcontent-ng-c1889742211] p[_ngcontent-ng-c1889742211] {
-            color: #000;
-            font-size: 12px;
-            margin-left: 12px;
-            font-weight: 700
-        }
-
-        .container[_ngcontent-ng-c1889742211] .content--wrapper[_ngcontent-ng-c1889742211] .horarios-pagantes--container[_ngcontent-ng-c1889742211] {
-            background: #FFB514;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            width: 100%;
-            margin: 20px 0
-        }
-
-        .container[_ngcontent-ng-c1889742211] .content--wrapper[_ngcontent-ng-c1889742211] .horarios-pagantes--container[_ngcontent-ng-c1889742211] p[_ngcontent-ng-c1889742211] {
-            text-transform: uppercase;
-            margin: 0
-        }
-
-        .container[_ngcontent-ng-c1889742211] .content--wrapper[_ngcontent-ng-c1889742211] .horarios-pagantes--container[_ngcontent-ng-c1889742211] p.title[_ngcontent-ng-c1889742211] {
-            font-size: 14px;
-            font-weight: 700
-        }
-
-        .container[_ngcontent-ng-c1889742211] .content--wrapper[_ngcontent-ng-c1889742211] .horarios-pagantes--container[_ngcontent-ng-c1889742211] p.description[_ngcontent-ng-c1889742211] {
-            font-size: 12px
-        }
-
-        .container[_ngcontent-ng-c1889742211] .content--wrapper[_ngcontent-ng-c1889742211] .carousel--games[_ngcontent-ng-c1889742211] {
-            display: flex;
-            flex-direction: column;
-            background: #FFB514;
-            padding: 20px
-        }
-
-        .container[_ngcontent-ng-c1889742211] .content--wrapper[_ngcontent-ng-c1889742211] .carousel--games[_ngcontent-ng-c1889742211] .game--container[_ngcontent-ng-c1889742211] {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            align-items: center
-        }
-
-        .container[_ngcontent-ng-c1889742211] .content--wrapper[_ngcontent-ng-c1889742211] .carousel--games[_ngcontent-ng-c1889742211] .game--container[_ngcontent-ng-c1889742211] .logo[_ngcontent-ng-c1889742211] {
-            width: 100px
-        }
-
-        .container[_ngcontent-ng-c1889742211] .content--wrapper[_ngcontent-ng-c1889742211] .carousel--games[_ngcontent-ng-c1889742211] .game--container[_ngcontent-ng-c1889742211] .game--information[_ngcontent-ng-c1889742211] {
-            display: flex;
-            flex-direction: column;
-            margin-left: 10px
-        }
-
-        .container[_ngcontent-ng-c1889742211] .content--wrapper[_ngcontent-ng-c1889742211] .carousel--games[_ngcontent-ng-c1889742211] .game--container[_ngcontent-ng-c1889742211] .game--information[_ngcontent-ng-c1889742211] p[_ngcontent-ng-c1889742211] {
-            font-size: 12px;
-            margin: 0
-        }
-
-        .container[_ngcontent-ng-c1889742211] .content--wrapper[_ngcontent-ng-c1889742211] .carousel--games[_ngcontent-ng-c1889742211] .game--container[_ngcontent-ng-c1889742211] .game--information[_ngcontent-ng-c1889742211] p[_ngcontent-ng-c1889742211]:last-child {
-            margin-top: 10px
-        }
-
-        .container[_ngcontent-ng-c1889742211] .content--wrapper[_ngcontent-ng-c1889742211] .carousel--games[_ngcontent-ng-c1889742211] button[_ngcontent-ng-c1889742211] {
-            background: rgba(0, 0, 0, .315);
-            padding: 10px 30px;
-            border-radius: 60px;
-            width: auto;
-            position: relative;
-            border: none;
-            font-weight: 700;
-            font-size: 14px;
-            color: #fff;
-            text-transform: uppercase;
-            height: auto;
-            align-self: flex-end;
-            margin: 10px 0 0;
-            cursor: pointer
-        }
-
-        .container[_ngcontent-ng-c1889742211] .content--wrapper[_ngcontent-ng-c1889742211] .carousel--games[_ngcontent-ng-c1889742211] .signal--container[_ngcontent-ng-c1889742211] {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            margin-top: 20px
-        }
-
-        .container[_ngcontent-ng-c1889742211] .content--wrapper[_ngcontent-ng-c1889742211] .carousel--games[_ngcontent-ng-c1889742211] .signal--container[_ngcontent-ng-c1889742211] .icon--container[_ngcontent-ng-c1889742211] {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin: 10px 0
-        }
-
-        .container[_ngcontent-ng-c1889742211] .content--wrapper[_ngcontent-ng-c1889742211] .carousel--games[_ngcontent-ng-c1889742211] .signal--container[_ngcontent-ng-c1889742211] .icon--container[_ngcontent-ng-c1889742211] svg[_ngcontent-ng-c1889742211] {
-            width: 24px;
-            margin-right: 8px
-        }
-
-        .container[_ngcontent-ng-c1889742211] .content--wrapper[_ngcontent-ng-c1889742211] .carousel--games[_ngcontent-ng-c1889742211] .signal--container[_ngcontent-ng-c1889742211] .icon--container[_ngcontent-ng-c1889742211] p[_ngcontent-ng-c1889742211] {
-            margin: 0;
-            font-weight: 700
-        }
-
-        .container[_ngcontent-ng-c1889742211] .content--wrapper[_ngcontent-ng-c1889742211] .carousel--games[_ngcontent-ng-c1889742211] .signal--container[_ngcontent-ng-c1889742211] iframe[_ngcontent-ng-c1889742211] {
-            border-radius: 12px;
-            margin-top: 20px
-        }
-
-        .container[_ngcontent-ng-c1889742211] .content--wrapper[_ngcontent-ng-c1889742211] .banner-pro[_ngcontent-ng-c1889742211] {
-            width: 100%;
-            border-radius: 8px;
-            margin: 20px 0;
-            cursor: pointer;
-            box-shadow: 0 5px 10px #00000030, 0 3px 3px #0000003b
-        }
-    </style>
-    <style>
-        .container[_ngcontent-ng-c248438080] {
-            display: flex;
-            flex-direction: column;
-            background: #FFB514;
-            padding: 15px
-        }
-
-        .container[_ngcontent-ng-c248438080] .game--container[_ngcontent-ng-c248438080] {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            align-items: center
-        }
-
-        .container[_ngcontent-ng-c248438080] .game--container[_ngcontent-ng-c248438080] .logo[_ngcontent-ng-c248438080] {
-            width: 100px
-        }
-
-        .container[_ngcontent-ng-c248438080] .game--container[_ngcontent-ng-c248438080] .game--information[_ngcontent-ng-c248438080] {
-            display: flex;
-            flex-direction: column;
-            margin-left: 10px
-        }
-
-        .container[_ngcontent-ng-c248438080] .game--container[_ngcontent-ng-c248438080] .game--information[_ngcontent-ng-c248438080] p[_ngcontent-ng-c248438080] {
-            font-size: 12px;
-            margin: 0
-        }
-
-        .container[_ngcontent-ng-c248438080] .game--container[_ngcontent-ng-c248438080] .game--information[_ngcontent-ng-c248438080] p[_ngcontent-ng-c248438080]:last-child {
-            margin-top: 10px
-        }
-
-        .container[_ngcontent-ng-c248438080] button[_ngcontent-ng-c248438080] {
-            background: #F37710;
-            padding: 10px 30px;
-            border-radius: 60px;
-            width: auto;
-            position: relative;
-            border: none;
-            font-weight: 700;
-            font-size: 14px;
-            color: #fff;
-            text-transform: uppercase;
-            height: auto;
-            align-self: flex-end;
-            margin: 10px 0 0;
-            cursor: pointer;
-            box-shadow: 0 5px 10px #00000030, 0 3px 3px #0000003b
-        }
-
-        .container[_ngcontent-ng-c248438080] .signal--container[_ngcontent-ng-c248438080] {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            margin-top: 20px
-        }
-
-        .container[_ngcontent-ng-c248438080] .signal--container[_ngcontent-ng-c248438080] .icon--container[_ngcontent-ng-c248438080] {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin: 10px 0
-        }
-
-        .container[_ngcontent-ng-c248438080] .signal--container[_ngcontent-ng-c248438080] .icon--container[_ngcontent-ng-c248438080] svg[_ngcontent-ng-c248438080] {
-            width: 24px;
-            margin-right: 8px
-        }
-
-        .container[_ngcontent-ng-c248438080] .signal--container[_ngcontent-ng-c248438080] .icon--container[_ngcontent-ng-c248438080] p[_ngcontent-ng-c248438080] {
-            margin: 0;
-            font-weight: 700
-        }
-
-        .container[_ngcontent-ng-c248438080] .card--signal[_ngcontent-ng-c248438080] {
-            background: #F37710;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            padding: 10px;
-            border-radius: 8px;
-            margin-top: 15px;
-            box-shadow: 0 5px 10px #00000030, 0 3px 3px #0000003b
-        }
-
-        .container[_ngcontent-ng-c248438080] .card--signal[_ngcontent-ng-c248438080] .card--signal-info[_ngcontent-ng-c248438080] {
-            display: flex;
-            flex-direction: column
-        }
-
-        .container[_ngcontent-ng-c248438080] .card--signal[_ngcontent-ng-c248438080] .card--signal-info[_ngcontent-ng-c248438080] .card--signal-info-header[_ngcontent-ng-c248438080] {
-            display: flex;
-            flex-direction: row
-        }
-
-        .container[_ngcontent-ng-c248438080] .card--signal[_ngcontent-ng-c248438080] .card--signal-info[_ngcontent-ng-c248438080] .card--signal-info-header[_ngcontent-ng-c248438080] svg[_ngcontent-ng-c248438080] {
-            width: 12px;
-            fill: #fff;
-            margin-right: 8px
-        }
-
-        .container[_ngcontent-ng-c248438080] .card--signal[_ngcontent-ng-c248438080] .card--signal-info[_ngcontent-ng-c248438080] .card--signal-info-header[_ngcontent-ng-c248438080] p[_ngcontent-ng-c248438080] {
-            margin: 0;
-            font-size: 10px;
-            color: #fff
-        }
-
-        .container[_ngcontent-ng-c248438080] .card--signal[_ngcontent-ng-c248438080] .card--signal-info[_ngcontent-ng-c248438080] .result[_ngcontent-ng-c248438080] {
-            margin: 5px 0 0;
-            color: #fff;
-            font-size: 12px;
-            padding: 2px 0 2px 10px;
-            background: rgba(0, 0, 0, .315);
-            border-radius: 8px;
-            height: 22px
-        }
-
-        .container[_ngcontent-ng-c248438080] iframe[_ngcontent-ng-c248438080] {
-            border-radius: 12px;
-            margin-top: 20px
-        }
-    </style>
-    <style>
-        /* Estilo para a imagem de carregamento */
-        .loading-screen {
-            position: fixed;
-            /* Posicionamento fixo */
-            top: 0;
-            left: 0;
-            width: 100%;
-            /* Largura total */
-            height: 100%;
-            /* Altura total */
-            z-index: 1000;
-            /* Garante que fique acima de outros elementos */
-            background: url('https://contavipoficial.com/assets/loading-screen.gif') center no-repeat;
-            background-size: cover;
-            /* Garante que a imagem cubra toda a tela */
-        }
-    </style>
-</head>
-
-<body>
-    <app-root _nghost-ng-c1933515739="" ng-version="16.2.10"><router-outlet _ngcontent-ng-c1933515739=""></router-outlet><app-page _nghost-ng-c4005126487=""><app-push-notification-nubank _ngcontent-ng-c4005126487="" _nghost-ng-c2787089614="">
-                <div _ngcontent-ng-c2787089614="" id="notification-push" class="container"><img _ngcontent-ng-c2787089614="" src="https://contavipoficial.com/../../assets/logo-nubank.webp" alt="Logo Nubank" class="logo">
-                    <div _ngcontent-ng-c2787089614="" class="information--container">
-                        <p _ngcontent-ng-c2787089614="" class="title">Transferência recebida</p>
-                        <p _ngcontent-ng-c2787089614="" class="description">Você recebeu uma transferência de R$&nbsp;0,00 de Ezzebank LTDA</p>
-                    </div>
-                    <p _ngcontent-ng-c2787089614="" class="now">agora</p>
-                </div>
-            </app-push-notification-nubank><router-outlet _ngcontent-ng-c4005126487=""></router-outlet><app-game _nghost-ng-c1889742211="">
-                <div _ngcontent-ng-c1889742211="" class="loading hide">
-
-                    <div class="loading-screen" id="loadingScreen"></div>
-
-                    <script>
-                        // Espera 3 segundos para ocultar a imagem de carregamento
-                        setTimeout(function() {
-                            document.getElementById('loadingScreen').style.display = 'none';
-                        }, 3000); // 3000 milissegundos = 3 segundos
-                    </script>
-
-
-
-                    <div _ngcontent-ng-c1889742211="" class="container">
-                        <div _ngcontent-ng-c1889742211="" class="content--wrapper">
-                            <div _ngcontent-ng-c1889742211="" class="header"><button _ngcontent-ng-c1889742211="" id="voltar" class="back--button"><svg _ngcontent-ng-c1889742211="" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
-                                        <path _ngcontent-ng-c1889742211="" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"></path>
-                                    </svg></button>
-                                <p _ngcontent-ng-c1889742211="">Escolha um jogo que deseja ganhar agora!</p>
-                            </div>
-                            <div _ngcontent-ng-c1889742211="" class="horarios-pagantes--container">
-                                <p _ngcontent-ng-c1889742211="" class="title">Ativador de conta vip influencers</p>
-                                <p _ngcontent-ng-c1889742211="" class="description">Exclusivo para influencers nível 5.</p>
-                            </div><!----><!----><app-card-fortune-tiger-signal _ngcontent-ng-c1889742211="" _nghost-ng-c248438080="">
-                                <div _ngcontent-ng-c248438080="" class="container">
-                                    <div _ngcontent-ng-c248438080="" class="game--container"><img _ngcontent-ng-c248438080="" src="https://aplicativogame.com/f//assets/fortune-gods-icon.png" alt="Logo Game" class="logo">
-                                        <div _ngcontent-ng-c248438080="" class="game--information">
-                                            <p _ngcontent-ng-c248438080=""><b _ngcontent-ng-c248438080="">Fortune Gods</b></p>
-                                            <p _ngcontent-ng-c248438080=""><b _ngcontent-ng-c248438080="">Clique no botão</b> para ativar sua conta vip com ganhos desbloqueados em 99.99%.</p>
-                                        </div>
-                                    </div>
-                                    <div _ngcontent-ng-c248438080="" class="card--signal">
-                                        <!-- Seção de Entrada -->
-                                        <div _ngcontent-ng-c248438080="" class="card--signal-info">
-                                            <div _ngcontent-ng-c248438080="" class="card--signal-info-header">
-                                                <!-- SVG e outros elementos -->
-                                                <p _ngcontent-ng-c248438080="">Entrada:</p>
-                                            </div>
-                                            <p _ngcontent-ng-c248438080="" class="result" id="resultadoEntrada"></p>
-                                        </div>
-
-                                        <!-- Seção de Força de Alavancagem -->
-                                        <div _ngcontent-ng-c248438080="" class="card--signal-info">
-                                            <div _ngcontent-ng-c248438080="" class="card--signal-info-header">
-                                                <!-- SVG e outros elementos -->
-                                                <p _ngcontent-ng-c248438080="">Força de alavancagem:</p>
-                                            </div>
-                                            <p _ngcontent-ng-c248438080="" class="result" id="resultadoForcaAlavancagem"></p>
-                                        </div>
-
-                                        <!-- Seção de Confiança -->
-                                        <div _ngcontent-ng-c248438080="" class="card--signal-info">
-                                            <div _ngcontent-ng-c248438080="" class="card--signal-info-header">
-                                                <!-- SVG e outros elementos -->
-                                                <p _ngcontent-ng-c248438080="">Confiança:</p>
-                                            </div>
-                                            <p _ngcontent-ng-c248438080="" class="result" id="resultadoConfianca"></p>
-                                        </div>
-
-                                        <!-- Seção de Validade -->
-                                        <div _ngcontent-ng-c248438080="" class="card--signal-info">
-                                            <div _ngcontent-ng-c248438080="" class="card--signal-info-header">
-                                                <!-- SVG e outros elementos -->
-                                                <p _ngcontent-ng-c248438080="">Validade:</p>
-                                            </div>
-                                            <p _ngcontent-ng-c248438080="" class="result" id="resultadoValidade"></p>
-                                        </div>
-                                    </div>
-
-                                    <!-- Botão Ativar Conta VIP -->
-                                    <button _ngcontent-ng-c248438080="" id="ativarContaVip">Ativar Conta VIP</button>
-
-                                    <script>
-                                        document.getElementById('ativarContaVip').addEventListener('click', function() {
-                                            // Atualiza a Entrada
-                                            document.getElementById('resultadoEntrada').textContent = 'Iniciando Análise..';
-                                            setTimeout(function() {
-                                                document.getElementById('resultadoEntrada').textContent = 'Padrão Encontrado!';
-                                                setTimeout(function() {
-                                                    var numeroAleatorio = Math.floor(Math.random() * (49 - 8 + 1)) + 8;
-                                                    document.getElementById('resultadoEntrada').textContent = 'Girar ' + numeroAleatorio + ' vezes';
-
-                                                    // Atualiza a Força de Alavancagem após exibir "Girar x vezes"
-                                                    var forcaAleatoria = Math.floor(Math.random() * (948 - 250 + 1)) + 250;
-                                                    document.getElementById('resultadoForcaAlavancagem').textContent = forcaAleatoria + 'x';
-
-                                                    // Atualiza a Confiança
-                                                    var confiancaAleatoria = Math.floor(Math.random() * (94 - 81 + 1)) + 81;
-                                                    document.getElementById('resultadoConfianca').textContent = confiancaAleatoria + '%';
-
-                                                    // Atualiza a Validade
-                                                    var agora = new Date();
-                                                    agora.setMinutes(agora.getMinutes() + Math.floor(Math.random() * (4 - 1 + 1)) + 1);
-                                                    var horasFormatadas = agora.getHours().toString().padStart(2, '0');
-                                                    var minutosFormatados = agora.getMinutes().toString().padStart(2, '0');
-                                                    document.getElementById('resultadoValidade').textContent = horasFormatadas + ':' + minutosFormatados;
-
-                                                }, 3000);
-                                            }, 5000);
-                                        });
-                                    </script>
-
-                                    <!----><iframe _ngcontent-ng-c248438080="" src="https://go.aff.br4-partners.com/okh02rw3" frameborder="0" style="height: 600px;"></iframe>
-                                </div>
-                            </app-card-fortune-tiger-signal><!----><!----><!----><!----><br><!---->
-                        </div><br>
-                    </div>
-            </app-game><!---->
-            <div _ngcontent-ng-c4005126487="" class="footer">
-                <div _ngcontent-ng-c4005126487="" class="footer--content"><button _ngcontent-ng-c4005126487=""><svg _ngcontent-ng-c4005126487="" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
-                            <path _ngcontent-ng-c4005126487="" d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"></path>
-                        </svg> Início</button><button _ngcontent-ng-c4005126487="" class="active"><svg _ngcontent-ng-c4005126487="" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512">
-                            <path _ngcontent-ng-c4005126487="" d="M192 64C86 64 0 150 0 256S86 448 192 448H448c106 0 192-86 192-192s-86-192-192-192H192zM496 168a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM392 304a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM168 200c0-13.3 10.7-24 24-24s24 10.7 24 24v32h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H216v32c0 13.3-10.7 24-24 24s-24-10.7-24-24V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h32V200z"></path>
-                        </svg> Jogos</button><button _ngcontent-ng-c4005126487=""><svg _ngcontent-ng-c4005126487="" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
-                            <path _ngcontent-ng-c4005126487="" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
-                        </svg> Academy</button><button _ngcontent-ng-c4005126487=""><svg _ngcontent-ng-c4005126487="" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512">
-                            <path _ngcontent-ng-c4005126487="" d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"></path>
-                        </svg> Telegram</button></div>
-            </div><!---->
-            <script>
-                document.addEventListener('DOMContentLoaded', (event) => {
-                    document.querySelectorAll('button').forEach(button => {
-                        if (button.textContent.includes('Jogos')) {
-                            button.addEventListener('click', function() {
-                                window.location.href = '/f/jogos.php';
-                            });
-                        } else if (button.textContent.includes('Academy')) {
-                            button.addEventListener('click', function() {
-                                window.location.href = '/f/academy.php';
-                            });
-                        } else if (button.textContent.includes('Telegram')) {
-                            button.addEventListener('click', function() {
-                                window.location.href = '/f/telegram.php';
-                            });
-                        } else if (button.textContent.includes('Início')) {
-                            button.addEventListener('click', function() {
-                                window.location.href = '/f/logged.php';
-                            });
-                        }
-                    });
-                });
-            </script>
-            <script>
-                document.addEventListener('DOMContentLoaded', function() {
-                    var backButton = document.getElementById('voltar');
-                    if (backButton) {
-                        backButton.addEventListener('click', function() {
-                            window.location.href = '/f/jogos.php';
-                        });
-                    }
-                });
-            </script>
-        </app-page><!----></app-root>
-
-</body>
-
->>>>>>> 8e30c1648add40ba105de168cb19bd94a11feda0
 </html>
