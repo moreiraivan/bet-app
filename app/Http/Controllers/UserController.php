@@ -22,14 +22,51 @@ class UserController extends Controller
     }
 
     public function game(Request $request){
-        $game = request()->get('game');
-        $photo = [
-            'fortune-tiger' => 'https://i0.wp.com/surgiu.com.br/wp-content/uploads/2023/06/fortune-tiger.jpg?ssl=1',
-            'fortune-ox' => 'https://bc.imgix.net/game/image/ef08a940-5c56-4d59-bd5d-b747ca673d0a.png',
-            'fortune-rabbit' => 'https://bc.imgix.net/game/image/146b9335-e513-4fd4-be0c-d9b999d1618a.png',
-            'fortune-mouse' => 'https://bc.imgix.net/game/image/115f771c-2fc7-40e5-9338-746a7d0a8188.png'
-        ];
-        $img = $photo[$game];
-        return view('game', compact('img'));
+        $game = $request->get('game');
+        $url = null;
+        $name = null;
+        $img = null;
+        switch($game){
+            case 'tiger':
+                $url = 'https://go.aff.br4-partners.com/drd4i32s';
+                $name = 'Fortune Tiger';
+                $img = asset('img/fortune-tiger-icon.webp');
+                break;
+            case 'piggy':
+                $url = 'https://go.aff.br4-partners.com/eay8kae1';
+                $name = 'Lucky Piggy';
+                $img = asset('img/lucky-piggy.webp');
+                break;
+            case 'ox':
+                $url = 'https://go.aff.br4-partners.com/mf477kx3';
+                $name = 'Fortune Ox';
+                $img =  asset('img/fortune-ox-icon.webp');
+                break;
+            case 'fortune-mouse':
+                return;
+                break;
+            case 'fortune-rabbit':
+                return;
+                break;
+            case 'dragon':
+                $url = 'https://go.aff.br4-partners.com/pd6heaba';
+                $name = 'Fortune Dragon';
+                $img = asset('img/dragon.png');
+                break;
+            case 'mines':
+                $url = 'https://go.aff.br4-partners.com/rp3jfrzs';
+                $name = 'Mines';
+                $img = asset('img/mines-icon.webp');
+                break;
+            case 'roulette':
+                $url = 'https://go.aff.br4-partners.com/okh02rw3';
+                $name = 'Roleta';
+                $img =  asset('img/roulette-lightning-icon.webp');
+                break;
+            default:
+                $url = 'https://go.aff.br4-partners.com/drd4i32s';
+                $img = asset('img/fortune-tiger-icon.webp');
+        }
+        return view('game', compact('url', 'img', 'name'));
     }
 }
