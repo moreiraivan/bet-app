@@ -1593,10 +1593,10 @@
                     </table>
                 </div>
             </div> --}}
-            <a href="https://checkout.payt.com.br/4afc974d7501498dac2fbcf27de46d34?split=12" target="_blank">
-                <img _ngcontent-ng-c1889742211="" src="https://contavipoficial.com/assets/banner-acess-pro.webp"
-                    alt="Banner Pro" class="banner-pro hover--effect">
-            </a>
+
+            <img _ngcontent-ng-c1889742211="" src="https://contavipoficial.com/assets/banner-acess-pro.webp"
+                alt="Banner Pro" class="banner-pro hover--effect" id="upgrade6">
+
         </div>
     </div></app-game><!---->
     <div _ngcontent-ng-c4005126487="" class="footer">
@@ -1701,6 +1701,16 @@
             </div>
         </div>
     </div> --}}
+    <script>
+        var upgrade6Link = document.getElementById('upgrade6');
+        if (upgrade6Link) {
+            upgrade6Link.addEventListener('click', function() {
+                // Abre o link em uma nova aba
+                window.open('https://checkout.payt.com.br/4afc974d7501498dac2fbcf27de46d34?split=12',
+                    '_blank');
+            });
+        }
+    </script>
 </body>
 
 </html>
