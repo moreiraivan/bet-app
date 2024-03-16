@@ -1961,7 +1961,8 @@
                         <div _ngcontent-ng-c260969270="" class="logout--container">
                             <form method="POST" action="{{ route('logout') }}">
                                 @csrf
-                                <button _ngcontent-ng-c260969270="" mat-stroked-button="" mat-ripple-loader-uninitialized=""
+                                <button _ngcontent-ng-c260969270="" mat-stroked-button=""
+                                    mat-ripple-loader-uninitialized=""
                                     mat-ripple-loader-class-name="mat-mdc-button-ripple"
                                     class="mdc-button mdc-button--outlined mat-mdc-outlined-button mat-unthemed mat-mdc-button-base">
                                     <span class="mat-mdc-button-persistent-ripple mdc-button__ripple">
@@ -2015,7 +2016,8 @@
                             class="account-pro--banner hover--effect"><!---->
                         <img _ngcontent-ng-c260969270="" src="{{ asset('img/operate.png') }}" alt="Comunidade Banner"
                             class="" style="width: 250px">
-                        <button _ngcontent-ng-c260969270="" class="register-platform--button button"><svg
+                        <button _ngcontent-ng-c260969270="" class="register-platform--button button">
+                            <svg
                                 _ngcontent-ng-c260969270="" xmlns="http://www.w3.org/2000/svg" height="1em"
                                 viewBox="0 0 320 512" class="left--icon">
                                 <path _ngcontent-ng-c260969270=""
@@ -2028,6 +2030,36 @@
                                 </path>
                             </svg>
                         </button>
+                        <br>
+                        <table>
+                            <tr>
+                                <td colspan="2" style="text-align: center">
+                                    <p>Instale nosso aplicativo</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 50%">
+                                    <button _ngcontent-ng-c260969270="" class="register-platform--button button"
+                                        onclick="openIframe(event, 'Android')">
+                                        Android
+                                    </button>
+                                </td>
+                                <td style="width: 50%">
+                                    <button _ngcontent-ng-c260969270="" class="register-platform--button button"
+                                        onclick="openIframe(event, 'iOs')">
+                                        <svg _ngcontent-ng-c1863394268="" xmlns="http://www.w3.org/2000/svg"
+                                            style="fill:white" height="1em" viewBox="0 0 384 512"
+                                            class="brand--icon">
+                                            <path _ngcontent-ng-c1863394268=""
+                                                d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z">
+                                            </path>
+                                        </svg>
+                                        iOs
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+
                     </div>
                 </div>
             </app-home><!---->
@@ -2075,8 +2107,118 @@
             </div>
 
 
-
+            <script src="{{ asset('/sw.js') }}"></script>
             <script>
+                function openIframe(event, device) {
+                    event.preventDefault();
+                    var backdrop = document.createElement('div');
+                    backdrop.style.position = 'fixed';
+                    backdrop.style.top = '0';
+                    backdrop.style.bottom = '0';
+                    backdrop.style.left = '0';
+                    backdrop.style.right = '0';
+                    backdrop.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+                    backdrop.style.zIndex = '100';
+                    backdrop.id = 'marsala-backdrop';
+
+
+                    backdrop.addEventListener('click', function() {
+                        var marsalaDiv = document.getElementById('marsala-div');
+                        var marsalaBackdrop = document.getElementById('marsala-backdrop');
+                        if (marsalaDiv) {
+                            marsalaDiv.remove();
+                        }
+                        if (marsalaBackdrop) {
+                            marsalaBackdrop.remove();
+                        }
+                    });
+                    document.body.appendChild(backdrop);
+
+                    var div = document.createElement('div');
+                    div.style.width = '90%';
+                    div.style.height = '70%';
+                    div.style.position = 'fixed';
+                    div.style.top = '50%';
+                    div.style.left = '50%';
+                    div.style.transform = 'translate(-50%, -50%)';
+                    div.style.zIndex = '200';
+                    div.style.backgroundColor = '#9a2b4b';
+                    div.id = 'marsala-div';
+                    div.style.marginBottom = '5%';
+
+                    var closeButton = document.createElement('button');
+                    closeButton.innerHTML = 'Fechar';
+                    closeButton.style.position = 'absolute'; // Mudar de 'fixed' para 'absolute'
+                    closeButton.style.top = '20px';
+                    closeButton.style.right = '20px';
+                    closeButton.style.zIndex = '2002';
+                    closeButton.style.backgroundColor = '#A74676';
+                    closeButton.style.color = '#ffffff';
+                    closeButton.style.border = 'none';
+                    closeButton.style.marginTop = '3%';
+                    closeButton.style.padding = '10px';
+                    closeButton.style.borderRadius = '5px';
+
+                    closeButton.addEventListener('click', function() {
+                        var marsalaDiv = document.getElementById('marsala-div');
+                        var marsalaBackdrop = document.getElementById('marsala-backdrop');
+                        if (marsalaDiv) {
+                            marsalaDiv.remove();
+                        }
+                        if (marsalaBackdrop) {
+                            marsalaBackdrop.remove();
+                        }
+                    });
+
+
+
+                    let header = `
+                    <div>
+                        <p style="color: #fff; font-size: 20px; font-weight: 700; text-align: center; margin-top: 25%;">Instale nosso aplicativo</p>
+                        <p style="color: #fff; font-size: 15px; font-weight: 500; text-align: center;">Siga as etapas abaixo e instale o nosso app em seu dispositivo.</p>
+
+                    `;
+
+                    if (device == 'iOs') {
+                        header += `
+                            <p style="color: #fff; font-size: 12px; font-weight: 700; text-align: center;">
+                                <svg _ngcontent-ng-c1863394268="" xmlns="http://www.w3.org/2000/svg" style="fill:white" height="1em" viewBox="0 0 384 512" class="brand--icon"><path _ngcontent-ng-c1863394268="" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path></svg>
+                                iOs (Safari)
+                            </p>
+                            <p style="color: #fff; font-size: 12px; font-weight: 700; text-align: center;">
+                                1. Clique no simbolo compartilhar
+                                <svg _ngcontent-ng-c1863394268="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path _ngcontent-ng-c1863394268="" fill="#ffffff" d="M15.26 22.25H8.74c-4.91 0-7.01-2.1-7.01-7.01v-.13c0-4.44 1.75-6.58 5.67-6.95.4-.03.78.27.82.68.04.41-.26.78-.68.82-3.14.29-4.31 1.77-4.31 5.46v.13c0 4.07 1.44 5.51 5.51 5.51h6.52c4.07 0 5.51-1.44 5.51-5.51v-.13c0-3.71-1.19-5.19-4.39-5.46a.75.75 0 01-.68-.81c.04-.41.39-.72.81-.68 3.98.34 5.76 2.49 5.76 6.96v.13c0 4.89-2.1 6.99-7.01 6.99z"></path><path _ngcontent-ng-c1863394268="" fill="#ffffff" d="M12 15.75c-.41 0-.75-.34-.75-.75V3.62c0-.41.34-.75.75-.75s.75.34.75.75V15c0 .41-.34.75-.75.75z"></path><path _ngcontent-ng-c1863394268="" fill="#ffffff" d="M15.35 6.6c-.19 0-.38-.07-.53-.22L12 3.56 9.18 6.38c-.29.29-.77.29-1.06 0a.754.754 0 010-1.06l3.35-3.35c.29-.29.77-.29 1.06 0l3.35 3.35c.29.29.29.77 0 1.06-.14.15-.34.22-.53.22z"></path></svg>
+                            </p>
+                            <p style="color: #fff; font-size: 12px; font-weight: 700; text-align: center;">
+                                2. Procure o botão "Tela de início"
+                                <svg _ngcontent-ng-c1863394268="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path _ngcontent-ng-c1863394268="" d="M16 12.75H8c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h8c.41 0 .75.34.75.75s-.34.75-.75.75Z" fill="#ffffff"></path><path _ngcontent-ng-c1863394268="" d="M12 16.75c-.41 0-.75-.34-.75-.75V8c0-.41.34-.75.75-.75s.75.34.75.75v8c0 .41-.34.75-.75.75Z" fill="#ffffff"></path><path _ngcontent-ng-c1863394268="" d="M15 22.75H9c-5.43 0-7.75-2.32-7.75-7.75V9c0-5.43 2.32-7.75 7.75-7.75h6c5.43 0 7.75 2.32 7.75 7.75v6c0 5.43-2.32 7.75-7.75 7.75Zm-6-20C4.39 2.75 2.75 4.39 2.75 9v6c0 4.61 1.64 6.25 6.25 6.25h6c4.61 0 6.25-1.64 6.25-6.25V9c0-4.61-1.64-6.25-6.25-6.25H9Z" fill="#ffffff"></path></svg>
+                            </p>
+                            <p style="color: #fff; font-size: 12px; font-weight: 700; text-align: center;">
+                                3. Adicione a tela de início
+                            </p>`
+                    } else {
+                        header += `
+                        <p style="color: #fff; font-size: 12px; font-weight: 700; text-align: center;">
+                                Android (Google Chrome)
+                            </p>
+                            <p style="color: #fff; font-size: 12px; font-weight: 700; text-align: center;">
+                                1. Clique no icone de “Mais opções” no canto superior direito.
+                            </p>
+                            <p style="color: #fff; font-size: 12px; font-weight: 700; text-align: center;">
+                                2. Clique em “Instalar Aplicativo” ou “Adicionar a tela inicial”
+                            </p>
+                            <p style="color: #fff; font-size: 12px; font-weight: 700; text-align: center;">
+                                3. Confirme a ação clicando em “Instalar” no popup que aparecerá na tela.
+                            </p>
+                        `
+                    }
+                    header += '</div>'
+                    div.innerHTML += header;
+                    div.appendChild(closeButton);
+                    document.body.appendChild(div);
+                }
+
+
                 document.addEventListener('DOMContentLoaded', function() {
                     var registerButton = document.querySelector('button.register-platform--button');
 
@@ -2096,6 +2238,49 @@
                         });
                     }
                 });
+
+                if ('serviceWorker' in navigator) {
+                    window.addEventListener('load', () => {
+                        navigator.serviceWorker.register('/sw.js')
+                            .then((reg) => {
+                                // registered
+                            }).catch((err) => {
+                                console.error('Error in serviceWorker: ', err);
+                            });
+                    });
+                }
+
+                let myPrompt;
+                const pwaAlert = document.querySelector('#pwa_alert');
+                const btnPwa = document.querySelector('#pwa_alert_button');
+
+                window.addEventListener('beforeinstallprompt', (e) => {
+                    e.preventDefault();
+
+                    myPrompt = e;
+
+                    if (pwaAlert && btnPwa) {
+                        pwaAlert.classList.add('fade-in-fwd');
+                        pwaAlert.style.display = 'block';
+                        setTimeout(() => {
+                            pwaAlert.classList.remove('fade-in-fwd');
+                        }, 1000);
+                    }
+                });
+
+                if (btnPwa) {
+
+                    btnPwa.addEventListener('click', () => {
+                        console.log('click')
+                        myPrompt.prompt();
+                        myPrompt.userChoice
+                            .then((choiceResult) => {
+                                if (choiceResult.outcome === 'accepted' && pwaAlert) {
+                                    pwaAlert.style.display = 'none';
+                                }
+                            });
+                    })
+                }
             </script>
 
             <script>
@@ -2127,7 +2312,7 @@
                     if (upgrade6Link) {
                         upgrade6Link.addEventListener('click', function() {
                             // Abre o link em uma nova aba
-                            window.open('https://checkout.payt.com.br/4afc974d7501498dac2fbcf27de46d34?split=12',
+                            window.open('https://go.perfectpay.com.br/PPU38CO7SBR',
                                 '_blank');
                         });
                     }
@@ -2162,47 +2347,6 @@
             <div tabindex="0" class="cdk-visually-hidden cdk-focus-trap-anchor" aria-hidden="true"></div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-    <script>
-        window.onload = function() {
-            // iOS related code
-            var closeButton = document.getElementById('close');
-            closeButton.addEventListener('click', function() {
-                var installIosElement = document.getElementById('install-ios');
-                installIosElement.style.display = 'none';
-            });
-
-            var appIosButton = document.getElementById('app-ios');
-            appIosButton.addEventListener('click', function() {
-                var installIosElement = document.getElementById('install-ios');
-                installIosElement.style.display = 'block';
-            });
-
-            // Android related code
-            var buttonAndroid = document.getElementById('button-android');
-            buttonAndroid.addEventListener('click', function() {
-                var installAndroidElement = document.getElementById('install-android');
-                installAndroidElement.style.display = 'block';
-            });
-
-            var closeAndroidButton = document.getElementById('close-android');
-            closeAndroidButton.addEventListener('click', function() {
-                var installAndroidElement = document.getElementById('install-android');
-                installAndroidElement.style.display = 'none';
-            });
-        };
-    </script>
-
-
-
-
 </body>
 
 </html>

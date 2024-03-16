@@ -57,7 +57,7 @@
 
                 <div class="row mb-3">
                     <p style="color: #ff234e; font-weight: 700;margin: 0;font-size: 16px;line-height: 24px;">
-                        <i class="fa-sharp fa-solid fa-circle-info"></i> Acesse com seu cpf cadastrado na plataforma
+                        <i class="fa-sharp fa-solid fa-circle-info"></i> Acesse com seu e-mail cadastrado na plataforma
                     </p>
 
                     <div class="col-md-6">

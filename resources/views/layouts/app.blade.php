@@ -20,7 +20,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    {{-- <link rel="manifest" href="{{ asset('/manifest.json') }}"> --}}
+    <link rel="manifest" href="{{ asset('/manifest.json') }}">
 </head>
 
 <body>
@@ -97,16 +97,48 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="{{ asset('/sw.js') }}"></script>
     <script>
-        if ("serviceWorker" in navigator) {
-            navigator.serviceWorker.register("/sw.js").then(
-                (registration) => {
-                    console.log('it works');
-                },
-                (error) => {
-                    console.log('it not works')
-                },
-            );
-        } else {}
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then((reg) => {
+                        // registered
+                    }).catch((err) => {
+                        console.error('Error in serviceWorker: ', err);
+                    });
+            });
+        }
+
+        let myPrompt;
+        const pwaAlert = document.querySelector('#pwa_alert');
+        const btnPwa = document.querySelector('#pwa_alert_button');
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+
+            myPrompt = e;
+
+            if (pwaAlert && btnPwa) {
+                pwaAlert.classList.add('fade-in-fwd');
+                pwaAlert.style.display = 'block';
+                setTimeout(() => {
+                    pwaAlert.classList.remove('fade-in-fwd');
+                }, 1000);
+            }
+        });
+
+        if (btnPwa) {
+
+            btnPwa.addEventListener('click', () => {
+                console.log('click')
+                myPrompt.prompt();
+                myPrompt.userChoice
+                    .then((choiceResult) => {
+                        if (choiceResult.outcome === 'accepted' && pwaAlert) {
+                            pwaAlert.style.display = 'none';
+                        }
+                    });
+            })
+        }
     </script>
     @yield('scripts')
 
