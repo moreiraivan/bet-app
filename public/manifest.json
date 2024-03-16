@@ -2,13 +2,13 @@
     "name": "AcessoVIP",
     "short_name": "AcessoVIP",
     "start_url": "/index.php",
-    "background_color": "#6777ef",
+    "background_color": "#A74676",
     "description": "AcessoVIP",
     "display": "fullscreen",
-    "theme_color": "#6777ef",
+    "theme_color": "#A74676",
     "icons": [
         {
-            "src": "https://contavipoficial.com/assets/fortune-tiger-icon.webp",
+            "src": "https://images.sftcdn.net/images/t_app-icon-m/p/130ade6e-5e92-4e3b-b355-f9b9a23799fc/2658240891/winner-tournament-maker-app-logo",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "any maskable"

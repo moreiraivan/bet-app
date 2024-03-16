@@ -5,7 +5,7 @@
     <title>Acesso VIP</title>
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="{{ asset('img/favicon.ico') }}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="manifest" href="{{ asset('/manifest.json') }}">
