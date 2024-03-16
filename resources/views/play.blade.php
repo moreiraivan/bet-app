@@ -1706,7 +1706,7 @@
         if (upgrade6Link) {
             upgrade6Link.addEventListener('click', function() {
                 // Abre o link em uma nova aba
-                window.open('https://checkout.payt.com.br/4afc974d7501498dac2fbcf27de46d34?split=12',
+                window.open('https://go.perfectpay.com.br/PPU38CO7SBR',
                     '_blank');
             });
         }
