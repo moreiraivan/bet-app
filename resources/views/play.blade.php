@@ -1508,20 +1508,41 @@
 
                             </td>
                             <td>
-                                <img src="{{ asset('img/fortune-mouse-icon-locked.webp') }}" alt="fortune-mouse"
-                                    style="height:150px; width: 150px;border-radius: 29px;cursor: pointer;box-shadow: 0 5px 10px #00000030, 0 3px 3px #0000003b;">
+                                @if (auth()->user()->pro)
+                                    <a href="{{ route('game', ['game' => 'fortune-mouse']) }}">
+                                        <img src="{{ asset('img/fortune-mouse-icon.webp') }}" alt="fortune-mouse"
+                                            style="height:150px; width: 150px;border-radius: 29px;cursor: pointer;box-shadow: 0 5px 10px #00000030, 0 3px 3px #0000003b;">
+                                    </a>
+                                @else
+                                    <img src="{{ asset('img/fortune-mouse-icon-locked.webp') }}" alt="fortune-mouse"
+                                        style="height:150px; width: 150px;border-radius: 29px;cursor: pointer;box-shadow: 0 5px 10px #00000030, 0 3px 3px #0000003b;">
+                                @endif
+
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <img src="{{ asset('img/fortune-rabbit-icon-locked.webp') }}" alt="fortune-rabbit"
-                                    style="height:150px; width: 150px;border-radius: 29px;cursor: pointer;box-shadow: 0 5px 10px #00000030, 0 3px 3px #0000003b;">
+                                @if (auth()->user()->pro)
+                                    <a href="{{ route('game', ['game' => 'fortune-rabbit']) }}">
+                                        <img src="{{ asset('img/fortune-rabbit-icon.webp') }}" alt="fortune-rabbit"
+                                            style="height:150px; width: 150px;border-radius: 29px;cursor: pointer;box-shadow: 0 5px 10px #00000030, 0 3px 3px #0000003b;">
+                                    </a>
+                                @else
+                                    <img src="{{ asset('img/fortune-rabbit-icon-locked.webp') }}" alt="fortune-rabbit"
+                                        style="height:150px; width: 150px;border-radius: 29px;cursor: pointer;box-shadow: 0 5px 10px #00000030, 0 3px 3px #0000003b;">
+                                @endif
                             </td>
                             <td>
-                                {{-- <a href="{{ route('game', ['game' => 'dragon']) }}"> --}}
-                                    <img src="{{ asset('img/dragon.png') }}" alt="dragon"
-                                        style="height:150px; width: 150px; background: white;border-radius: 29px;cursor: pointer;box-shadow: 0 5px 10px #00000030, 0 3px 3px #0000003b;">
-                                {{-- </a> --}}
+                                @if(auth()->user()->pro)
+                                <a href="{{ route('game', ['game' => 'dragon']) }}">
+                                    <img src="{{ asset('img/fortune-dragon.webp') }}" alt="fortune-dragon"
+                                        style="height:150px; width: 150px;border-radius: 29px;cursor: pointer;box-shadow: 0 5px 10px #00000030, 0 3px 3px #0000003b;">
+                                </a>
+                                @else
+                                <img src="{{ asset('img/dragon.png') }}" alt="dragon"
+                                    style="height:150px; width: 150px; background: white;border-radius: 29px;cursor: pointer;box-shadow: 0 5px 10px #00000030, 0 3px 3px #0000003b;">
+                                @endif
+
                             </td>
                         </tr>
                         <tr>
@@ -1543,9 +1564,9 @@
             </app-card-fortune-tiger-signal>
             <img _ngcontent-ng-c1889742211="" src="https://contavipoficial.com/assets/banner-acess-pro.webp"
                 alt="Banner Pro" class="banner-pro hover--effect" id="upgrade6" style="margin-bottom: 20px">
-                <div _ngcontent-ng-c1889742211="" class="header">
-                   <h1></h1>
-                </div>
+            <div _ngcontent-ng-c1889742211="" class="header">
+                <h1></h1>
+            </div>
         </div>
     </div></app-game><!---->
     <div _ngcontent-ng-c4005126487="" class="footer">

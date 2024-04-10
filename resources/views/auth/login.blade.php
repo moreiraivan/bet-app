@@ -57,9 +57,8 @@
 
                 <div class="row mb-3">
                     <p style="color: #ff234e; font-weight: 700;margin: 0;font-size: 16px;line-height: 24px;">
-                        <i class="fa-sharp fa-solid fa-circle-info"></i> Acesse com seu e-mail cadastrado na plataforma
+                        <i class="fa-sharp fa-solid fa-circle-info"></i> Utilize seu e-mail para ativar o acesso VIP
                     </p>
-
                     <div class="col-md-6">
                         <input id="email" type="email"
                                class="form-control @error('email') is-invalid @enderror" name="email"

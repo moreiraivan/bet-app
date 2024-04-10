@@ -43,15 +43,19 @@ class UserController extends Controller
                 $img =  asset('img/fortune-ox-icon.webp');
                 break;
             case 'fortune-mouse':
-                return;
+                $name = 'Fortune Mouse';
+                $img = asset('img/fortune-mouse-icon.webp');
+                $url = 'https://go.aff.br4-partners.com/93ji8luw';
                 break;
             case 'fortune-rabbit':
-                return;
+                $name = 'Fortune Rabbit';
+                $img = asset('img/fortune-rabbit-icon.webp');
+                $url = 'https://go.aff.br4-partners.com/puweffb0';
                 break;
             case 'dragon':
                 $url = 'https://go.aff.br4-partners.com/pd6heaba';
                 $name = 'Fortune Dragon';
-                $img = asset('img/dragon.png');
+                $img = asset('img/fortune-dragon.webp');
                 break;
             case 'mines':
                 $url = 'https://go.aff.br4-partners.com/rp3jfrzs';
