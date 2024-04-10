@@ -18,6 +18,7 @@ class AdminController extends Controller
                 return redirect()->route('login');
             }
         }
+        return redirect()->route('login');
     }
 
     public function viewLogin()
