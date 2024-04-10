@@ -30,7 +30,7 @@
                                                 action="{{ route('admin.user.update', ['user' => $user->id]) }}">
                                                 @csrf
                                                 @method('DELETE')
-                                                <button type="submit" class="btn btn-sm btn-primary"
+                                                <button type="submit" class="btn btn-sm btn-danger"
                                                     class="btn btn-sm btn-danger">Deletar</button>
                                             </form>
                                         </td>
