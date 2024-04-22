@@ -17,6 +17,7 @@
                                     <th scope="col">Data</th>
                                     <th scope="col">Deletar</th>
                                     <th scope="col">Atualizar</th>
+                                    <th scope="col">Casa</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -40,7 +41,7 @@
                                                     action="{{ route('admin.user.update', ['user' => $user->id]) }}">
                                                     @csrf
                                                     @method('PUT')
-                                                    <input type="hidden" name="pro" value="{{ !$user->pro }}">
+                                                    <input type="hidden" name="pro" value="0">
                                                     <button type="submit" class="btn btn-sm btn-warning">Desativar</button>
                                                 </form>
                                             @else
@@ -48,10 +49,26 @@
                                                     action="{{ route('admin.user.update', ['user' => $user->id]) }}">
                                                     @csrf
                                                     @method('PUT')
-                                                    <input type="hidden" name="pro" value="{{ !$user->pro }}">
+                                                    <input type="hidden" name="pro" value="1">
                                                     <button type="submit" class="btn btn-sm btn-primary">Ativar</button>
                                                 </form>
                                             @endif
+                                        </td>
+                                        <td>
+                                            <form method="POST" style="display: inline-block;"
+                                                  action="{{ route('admin.user.update', ['user' => $user->id]) }}">
+                                                @csrf
+                                                @method('PUT')
+                                                <input type="hidden" name="house" value="1">
+                                                <button type="submit" class="btn btn-sm btn-info" {{ $user->house == 1 ? 'disabled' : null}} >Br4Bet</button>
+                                            </form>
+                                            <form method="POST" style="display: inline-block;"
+                                                  action="{{ route('admin.user.update', ['user' => $user->id]) }}">
+                                                @csrf
+                                                @method('PUT')
+                                                <input type="hidden" name="house" value="2">
+                                                <button type="submit" class="btn btn-sm btn-warning" {{ $user->house == 2 ? 'disabled' : null}}>Donald</button>
+                                            </form>
                                         </td>
                                     </tr>
                                 @endforeach

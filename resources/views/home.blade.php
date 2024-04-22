@@ -2001,8 +2001,11 @@
                         <div _ngcontent-ng-c260969270="" class="card--container">
                             <div _ngcontent-ng-c260969270="" class="card">
                                 <p _ngcontent-ng-c260969270=""><b _ngcontent-ng-c260969270="">Olá</b>, seja bem-vindo
-                                    (a) <b _ngcontent-ng-c260969270="">aproveite todos os benefícios</b> de ser <b
-                                        _ngcontent-ng-c260969270="">Nível 5.</b></p><img _ngcontent-ng-c260969270=""
+                                    (a)
+                                    <b _ngcontent-ng-c260969270="">aproveite todos os benefícios</b> de ser
+                                    <b ngcontent-ng-c260969270="">@if(!Auth::user()->pro) Nível 5. @else Nível PRO @endif</b>
+                                </p>
+                                <img _ngcontent-ng-c260969270=""
                                     src="https://contavipoficial.com/assets/boy-pg-soft.webp" alt="Boy PG Soft"
                                     class="boy--pg-soft"><img _ngcontent-ng-c260969270=""
                                     src="https://contavipoficial.com/assets/icon-messenger.webp" alt="Ícone Messenger"
@@ -2010,9 +2013,11 @@
                                 <p _ngcontent-ng-c260969270="" class="messenger-quantity--container">1</p>
                             </div>
                         </div>
-                        <img _ngcontent-ng-c260969270="" id="upgrade6"
-                            src="https://contavipoficial.com/assets/banner-acess-pro.webp" alt="Banner Pro"
-                            class="account-pro--banner hover--effect"><!---->
+                        @if(!Auth::user()->pro)
+                            <img _ngcontent-ng-c260969270="" id="upgrade6"
+                                 src="https://contavipoficial.com/assets/banner-acess-pro.webp" alt="Banner Pro"
+                                 class="account-pro--banner hover--effect">
+                        @endif
                         <img _ngcontent-ng-c260969270="" src="{{ asset('img/operate.png') }}" alt="Comunidade Banner"
                             class="" style="width: 250px">
                         <button _ngcontent-ng-c260969270="" class="register-platform--button button">
@@ -2338,8 +2343,14 @@
                                     role="img"
                                     class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color"
                                     aria-hidden="true" data-mat-icon-type="font">close</mat-icon>
-                            </div><iframe _ngcontent-ng-c3015247698="" height="550px" frameborder="0"
+                            </div>
+                            @if(Auth::user()->house == 1)
+                            <iframe _ngcontent-ng-c3015247698="" height="550px" frameborder="0"
                                 src="https://go.aff.br4-partners.com/acessovip"></iframe>
+                                @else
+                                <iframe _ngcontent-ng-c3015247698="" height="550px" frameborder="0"
+                                        src="https://go.aff.donald.bet/vg0zsozy?source_id=acessovip"></iframe>
+                            @endif
                         </app-dialog-paypix><!----></div>
                 </div>
             </mat-dialog-container>

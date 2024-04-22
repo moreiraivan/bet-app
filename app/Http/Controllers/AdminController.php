@@ -40,7 +40,12 @@ class AdminController extends Controller
 
     public function update(Request $request, $id){
         $user = User::find($id);
-        $user->pro = intval($request->get('pro'));
+        if($request->filled('pro')){
+            $user->pro = intval($request->get('pro'));
+        }
+        if($request->filled('house')){
+            $user->house = intval($request->get('house'));
+        }
         $user->save();
         return redirect()->route('admin.home');
     }

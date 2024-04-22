@@ -1480,7 +1480,7 @@
             </div>
             <div _ngcontent-ng-c1889742211="" class="horarios-pagantes--container">
                 <p _ngcontent-ng-c1889742211="" class="title">Ativador de acesso vip</p>
-                <p _ngcontent-ng-c1889742211="" class="description">Exclusivo para influencers nível 5.</p>
+                @if(!Auth::user()->pro) <p _ngcontent-ng-c1889742211="" class="description">Exclusivo para influencers nível 5.</p>@else <p _ngcontent-ng-c1889742211="" class="description">Exclusivo para influencers nível PRO.</p> @endif
             </div><!----><!----><app-card-fortune-tiger-signal _ngcontent-ng-c1889742211="" _nghost-ng-c248438080="">
                 <div _ngcontent-ng-c248438080="" class="container" style="display: flex">
                     <table>
@@ -1562,8 +1562,10 @@
                     </table>
                 </div>
             </app-card-fortune-tiger-signal>
-            <img _ngcontent-ng-c1889742211="" src="https://contavipoficial.com/assets/banner-acess-pro.webp"
-                alt="Banner Pro" class="banner-pro hover--effect" id="upgrade6" style="margin-bottom: 20px">
+            @if(!Auth::user()->pro)
+                <img _ngcontent-ng-c1889742211="" src="https://contavipoficial.com/assets/banner-acess-pro.webp"
+                     alt="Banner Pro" class="banner-pro hover--effect" id="upgrade6" style="margin-bottom: 20px">
+            @endif
             <div _ngcontent-ng-c1889742211="" class="header">
                 <h1></h1>
             </div>
@@ -1613,64 +1615,6 @@
         </div>
     </div>
     </app-page><!----></app-root>
-    {{-- <div id="install-ios">
-        <span class="close-button">&times;</span>
-        <div _ngcontent-ng-c1863394268="" class="container"><mat-icon _ngcontent-ng-c1863394268="" id="close"
-                role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color"
-                aria-hidden="true" data-mat-icon-type="font">close</mat-icon><svg _ngcontent-ng-c1863394268=""
-                xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" class="brand--icon">
-                <path _ngcontent-ng-c1863394268=""
-                    d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z">
-                </path>
-            </svg><!----><!---->
-            <p _ngcontent-ng-c1863394268="" class="title">Instale nosso app</p>
-            <p _ngcontent-ng-c1863394268="" class="description">Siga as etapas abaixo e instale o nosso app em seu
-                dispositivo.</p>
-            <p _ngcontent-ng-c1863394268="" class="brand">iOS (Safari)</p>
-            <div _ngcontent-ng-c1863394268="" class="step--container">
-                <div _ngcontent-ng-c1863394268="" class="number">
-                    <p _ngcontent-ng-c1863394268="">01</p>
-                </div>
-                <p _ngcontent-ng-c1863394268="" class="title">Clique no símbolo de compartilhar</p><svg
-                    _ngcontent-ng-c1863394268="" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24" fill="none">
-                    <path _ngcontent-ng-c1863394268="" fill="#ffffff"
-                        d="M15.26 22.25H8.74c-4.91 0-7.01-2.1-7.01-7.01v-.13c0-4.44 1.75-6.58 5.67-6.95.4-.03.78.27.82.68.04.41-.26.78-.68.82-3.14.29-4.31 1.77-4.31 5.46v.13c0 4.07 1.44 5.51 5.51 5.51h6.52c4.07 0 5.51-1.44 5.51-5.51v-.13c0-3.71-1.19-5.19-4.39-5.46a.75.75 0 01-.68-.81c.04-.41.39-.72.81-.68 3.98.34 5.76 2.49 5.76 6.96v.13c0 4.89-2.1 6.99-7.01 6.99z">
-                    </path>
-                    <path _ngcontent-ng-c1863394268="" fill="#ffffff"
-                        d="M12 15.75c-.41 0-.75-.34-.75-.75V3.62c0-.41.34-.75.75-.75s.75.34.75.75V15c0 .41-.34.75-.75.75z">
-                    </path>
-                    <path _ngcontent-ng-c1863394268="" fill="#ffffff"
-                        d="M15.35 6.6c-.19 0-.38-.07-.53-.22L12 3.56 9.18 6.38c-.29.29-.77.29-1.06 0a.754.754 0 010-1.06l3.35-3.35c.29-.29.77-.29 1.06 0l3.35 3.35c.29.29.29.77 0 1.06-.14.15-.34.22-.53.22z">
-                    </path>
-                </svg><!---->
-            </div>
-            <div _ngcontent-ng-c1863394268="" class="step--container">
-                <div _ngcontent-ng-c1863394268="" class="number">
-                    <p _ngcontent-ng-c1863394268="">02</p>
-                </div>
-                <p _ngcontent-ng-c1863394268="" class="title">Procure o botão "Tela de Início"</p><svg
-                    _ngcontent-ng-c1863394268="" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24" fill="none">
-                    <path _ngcontent-ng-c1863394268=""
-                        d="M16 12.75H8c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h8c.41 0 .75.34.75.75s-.34.75-.75.75Z"
-                        fill="#ffffff"></path>
-                    <path _ngcontent-ng-c1863394268=""
-                        d="M12 16.75c-.41 0-.75-.34-.75-.75V8c0-.41.34-.75.75-.75s.75.34.75.75v8c0 .41-.34.75-.75.75Z"
-                        fill="#ffffff"></path>
-                    <path _ngcontent-ng-c1863394268=""
-                        d="M15 22.75H9c-5.43 0-7.75-2.32-7.75-7.75V9c0-5.43 2.32-7.75 7.75-7.75h6c5.43 0 7.75 2.32 7.75 7.75v6c0 5.43-2.32 7.75-7.75 7.75Zm-6-20C4.39 2.75 2.75 4.39 2.75 9v6c0 4.61 1.64 6.25 6.25 6.25h6c4.61 0 6.25-1.64 6.25-6.25V9c0-4.61-1.64-6.25-6.25-6.25H9Z"
-                        fill="#ffffff"></path>
-                </svg><!---->
-            </div>
-            <div _ngcontent-ng-c1863394268="" class="step--container">
-                <div _ngcontent-ng-c1863394268="" class="number">
-                    <p _ngcontent-ng-c1863394268="">03</p>
-                </div>
-                <p _ngcontent-ng-c1863394268="" class="title">Adicione o app a tela de início.</p>
-            </div>
-        </div>
-    </div> --}}
     <script>
         var upgrade6Link = document.getElementById('upgrade6');
         if (upgrade6Link) {

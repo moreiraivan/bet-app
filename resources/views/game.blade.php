@@ -1433,7 +1433,7 @@
             </div>
             <div _ngcontent-ng-c1889742211="" class="horarios-pagantes--container">
                 <p _ngcontent-ng-c1889742211="" class="title">Ativador de acesso vip</p>
-                <p _ngcontent-ng-c1889742211="" class="description">Exclusivo para influencers nível 5.</p>
+                @if(!Auth::user()->pro) <p _ngcontent-ng-c1889742211="" class="description">Exclusivo para influencers nível 5.</p>@else <p _ngcontent-ng-c1889742211="" class="description">Exclusivo para influencers nível PRO.</p> @endif
             </div><!----><!----><app-card-fortune-tiger-signal _ngcontent-ng-c1889742211="" _nghost-ng-c248438080="">
                 <div _ngcontent-ng-c248438080="" class="container">
                     <div _ngcontent-ng-c248438080="" class="game--container"><img _ngcontent-ng-c248438080=""
@@ -1524,7 +1524,8 @@
                     <!----><iframe _ngcontent-ng-c248438080="" src="{{ $url }}" frameborder="0"
                         style="height: 600px;"></iframe>
                 </div>
-            </app-card-fortune-tiger-signal><!----><!----><!----><!----><img _ngcontent-ng-c1889742211=""
+            </app-card-fortune-tiger-signal><!----><!----><!----><!---->
+            <img _ngcontent-ng-c1889742211=""
                 src="https://contavipoficial.com/assets/banner-acess-pro.webp" alt="Banner Pro"
                 class="banner-pro hover--effect"><!---->
         </div>
